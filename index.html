@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Johnny Tolengo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ecd564bd6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="img/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">Sobre mi</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Diseñador Multimedial</p>
+                <h1>Hola, Soy<br><span>Johnny</span> Tolengo</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------- Sobre mi ---------- -->
+
+<div id="about">
+    <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Sobre mi</h1>
+                    <p>Mi nombre es Johnny Tolengo, Diseñador 3D y Mutlimedial de la Ciudad Autónoma de Buenos Aires. Más de 23 años de experiencia profesional como artista 3D, desarrollador web y fotógrafo. He trabajado en diversos campos como empresas de publicidad, producciones cinematográficas (gaffer, fotógrafo y supervisor de VFX), y estudios de arquitectura e ingeniería realizando renders y animaciones de proyectos.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('educacion')">Educación</p>
+                        <p class="tab-links" onclick="opentab('cursos')">Cursos</p>
+                        <p class="tab-links" onclick="opentab('antecedentes')">Antecedentes</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="educacion">
+                        <ul>
+                            <li><span>Diseñador Gráfico</span><br>Universidad de Buenos Aires</li>
+                            <li><span>Diseño y Programación Web</span><br>Escuela DaVinci</li>
+                            <li><span>3D & Multimedia Designer</span><br>Image Campus</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="cursos">
+                        <ul>
+                            <li><span>Diseño Front End</span><br>Ticmas Academy</li>
+                            <li><span>Modelado 3d Zbrush</span><br>Escuela DaVinci</li>
+                            <li><span>Fotografía de Producto</span><br>Foto Club Buenos Aires</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="antecedentes">
+                        <ul>
+                            <li><span>(2018-2023) Kubik Media</span><br>Desarrollo Web / Front End / Programación JS</li>
+                            <li><span>(2006-2018) Publicis Groupe</span><br>Modelado Orgánico 3D / Texturizado / Iluminación y Render Arquitectónico</li>
+                            <li><span>(2003-2005) Estudio Axys</span><br>Diseñador Gráfico</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+<!-- ---------- Portfolio ---------- -->
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-bezier-curve"></i>
+                <h2>Diseño Gráfico</h2>
+                <p>Diseño de Logotipos, Folletos, Banners, Cartelería, Presentaciones Multimedia, Catálogos Interactivos.</p>
+                <a href="https://www.ticmas.com/">Ver más</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Diseño Web - UI/UX</h2>
+                <p>Desarrollo de Pagínas Web, Diseño UI/UX, Catálogos e-Commerce, Landing Pages, SEO/SEM, Programación JS.</p>
+                <a href="https://www.ticmas.com/">Ver más</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-unity"></i>
+                <h2>Diseño 3D</h2>
+                <p>Diseño y Animación 3D, Fotogrametría, Modelado Orgánico, Texturizado, Renderizado Arquitectónico.</p>
+                <a href="https://www.ticmas.com/">Ver más</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- ---------- contact ---------- -->
+
+<div id="contacto">
+    <div class="container">
+           <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contacto</h1>
+                    <p> <i class="fa-sharp fa-solid fa-paper-plane"></i> info@johnnytolengo.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> 15 9999 9999</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/ticmasedu/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/ticmas_edu"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ticmasedu/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/ticmas-educacion/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="img/cv_johnny_tolengo.pdf" download class="btn btn2">Descargar CV</a>
+                </div>
+                <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Su Nombre" required>
+                    <input type="email" name="email" placeholder="Su e-mail" required>
+                    <textarea name="mensaje" rows="6" placeholder="Su Mensaje"></textarea>
+                    <button type="submit" class="btn btn2">Enviar</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div> 
+    </div>
+</div>
+
+<div class="copyright">
+    <p>Copyright ©Johnny Tolengo <i class="fa-sharp fa-solid fa-earth-americas"></i> Todos los derechos reservados.</p>
+</div>
+
+<script src="js/function.js"></script>
+
+</body>
+</html>
